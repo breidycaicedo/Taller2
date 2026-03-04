@@ -86,3 +86,67 @@ Cada una de estas condiciones puede ser verdadera o falsa, y dependiendo de su c
 ## 5. Trazabilidad
 
 ## 6. Gestion de Versiones (GitFlow)
+
+### Ramas creadas
+
+Para el desarrollo del documento de pruebas se utilizó el modelo **GitFlow**, creando las siguientes ramas:
+
+- **main**  
+  Contiene la versión final y estable del documento de pruebas aprobada.
+
+- **develop**  
+  Rama principal de integración donde se consolidaron todos los requerimientos y casos de prueba antes de pasar a producción.
+
+- **feature/RF-01-edad**  
+  Creada para el desarrollo de los casos de prueba correspondientes al registro de estudiantes por edad.
+
+- **feature/RF-02-codigo-estudiante**  
+  Utilizada para diseñar y documentar los casos de prueba asociados al código del estudiante.
+
+- **feature/RF-03-inscripcion-evento**  
+  Rama destinada a la construcción de la tabla de decisión y casos de prueba para la inscripción a eventos.
+ **feature/gitflow**
+  Rama destinada al control de versiones y flujo de procesos.
+---
+
+### Flujo seguido
+
+El flujo de trabajo aplicado fue el siguiente:
+
+1. Se creó inicialmente la rama **develop** a partir de **main**.
+2. Cada integrante del equipo creó una rama **feature** correspondiente al requerimiento asignado.
+3. En cada rama feature se desarrollaron:
+   - Técnicas de prueba.
+   - Casos de prueba.
+   - Tablas correspondientes.
+4. Una vez finalizado el desarrollo, los cambios fueron enviados mediante *pull requests* hacia la rama **develop**.
+5. Después de validar que toda la información estuviera correcta, la rama **develop** fue integrada en **main**, generando la versión final del documento.
+
+---
+
+### Integración de cambios
+
+La integración se realizó mediante:
+
+- Uso de **merge requests / pull requests**.
+- Revisión previa de los cambios por parte del equipo.
+- Validación de consistencia entre requerimientos, técnicas y casos de prueba antes de aceptar la integración.
+
+Esto permitió evitar inconsistencias entre los distintos features desarrollados.
+
+---
+
+### Conflictos y resolución
+
+Durante la integración se presentaron conflictos menores debido a:
+
+- Edición simultánea del mismo documento.
+- Modificaciones en tablas compartidas del informe.
+
+Los conflictos fueron resueltos mediante:
+
+- Comparación manual de versiones.
+- Conservación de la información más actualizada.
+- Revisión conjunta del equipo antes de confirmar el *merge*.
+
+Una vez solucionados, se verificó que el documento final mantuviera coherencia y trazabilidad entre todos los requerimientos evaluados.
