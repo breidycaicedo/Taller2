@@ -4,9 +4,32 @@
 
 ## 2. Requerimientos a Evaluar
 
-## 3. Tecnicas de Prueba Aplicadas
+## RF-03 Inscripción a Evento
 
+Un estudiante podrá inscribirse a un evento solo si:
+
+- Está registrado.
+- El evento tiene cupos disponibles.
+- No está previamente inscrito.
+
+Si alguna condición no se cumple, el sistema no debe permitir la inscripción.
+## 3. Tecnicas de Prueba Aplicadas
+Escogimos la técnica de **tabla de decisión**, debido a que existen varias condiciones, como lo son:
+
+- Estar registrado.
+- Que el evento tenga cupos disponibles.
+- Estar previamente inscrito.
+
+Cada una de estas condiciones puede ser verdadera o falsa, y dependiendo de su combinación, afecta el resultado final, que en este caso sería que el sistema permita o no la inscripción.
 ## 4. Casos de Prueba Diseñados
+# Tabla de decisión
+
+| Condiciones                          | Caso1 | Caso2 | Caso3 | Caso4 | Caso5 | Caso6 | Caso7 | Caso8 |
+|--------------------------------------|-------|-------|-------|-------|-------|-------|-------|-------|
+| Está registrado                     | V     | V     | V     | F     | V     | F     | F     | F     |
+| El evento tiene cupos disponibles   | V     | V     | F     | V     | F     | V     | F     | F     |
+| Está previamente inscrito           | V     | F     | V     | V     | F     | F     | V     | F     |
+| Motivo del rechazo                  | N/A   | No está previamente registrado | El evento no tiene cupos disponibles | El usuario no está registrado | El evento no tiene cupos disponibles y el usuario no está registrado | No está registrado y no está previamente inscrito | No está registrado y el evento no tiene cupos disponibles | No cumple las condiciones |
 
 ## 5. Trazabilidad
 
