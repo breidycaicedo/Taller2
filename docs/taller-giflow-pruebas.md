@@ -2,6 +2,14 @@
 
 ## 1. Descripcion del Sistema
 
+Plataforma de Gestión de Eventos Universitarios
+
+La plataforma permite:
+
+* Registro de estudiantes.
+* Validación de código estudiantil.
+* Inscripción a eventos.
+
 ## 2. Requerimientos a Evaluar
 
 ### RF-01 Registro de Estudiantes (Edad)
