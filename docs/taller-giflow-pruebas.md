@@ -14,6 +14,7 @@ Un estudiante podrá inscribirse a un evento solo si:
 
 Si alguna condición no se cumple, el sistema no debe permitir la inscripción.
 ## 3. Tecnicas de Prueba Aplicadas
+## RF-03 Inscripción a Evento
 Escogimos la técnica de **tabla de decisión**, debido a que existen varias condiciones, como lo son:
 
 - Estar registrado.
@@ -22,6 +23,7 @@ Escogimos la técnica de **tabla de decisión**, debido a que existen varias con
 
 Cada una de estas condiciones puede ser verdadera o falsa, y dependiendo de su combinación, afecta el resultado final, que en este caso sería que el sistema permita o no la inscripción.
 ## 4. Casos de Prueba Diseñados
+## RF-03 Inscripción a Evento
 # Tabla de decisión
 
 | Condiciones                          | Caso1 | Caso2 | Caso3 | Caso4 | Caso5 | Caso6 | Caso7 | Caso8 |
